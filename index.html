@@ -1,23 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Sadie's Recipes</title>
-        <link rel="stylesheet" href = "styles.css"/> 
-
-    </head>
-    <body class="recipes">
-        <h1>Sadie's Recipes</h1>
-        <a href="recipe/hearthealthycookies.html" target="_blank">
-            <button class = "button">Heart Healthy Cookies</button>
-        </a>
-        
-        <a href="recipe/pizza.html" target="_blank">  
-            <button class = "button"> The Perfect Homemade Pizza</button>
-        </a>
-        <a href="recipe/pancake.html" target="_blank">
-            <button class = "button">Good Old-Fashioned Pancake</button>
-        </a>
-    
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>3rd grade matching game</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="Sadiescript.js" defer></script>
+</head>
+	<body id="body">
+		<h2 id="header">Mutiplication Match</h2>
+		<!--start using (https://dev.to/walternascimentobarroso/creating-a-timer-with-javascript-8b7) here. Not everything in this portion of code is from the website though I changed a bunch of stuff and added stuff-->
+		<form name="form_main">
+			<div  id = "startendbuttonstimesize">
+			  <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+				<br />
+				<button id="starttimer" onclick="start(); shuffleAssign();" type="button">Start</button>
+				<button id="endgame" onclick="end()" type="button">End</button>
+				<button id="clearbutton" onclick="clearTimer(); clearCards(); end();" type="button">Clear</button>
+	 		</div>
+		</form>
+		<!--stop using (https://dev.to/walternascimentobarroso/creating-a-timer-with-javascript-8b7) here. Not everything in this portion of code is from the website though I changed a bunch of stuff and added stuff-->
+		<!--lay out of cards-->
+		<div id="flex-container">
+			<div class="column">
+				<button class="contentofcards column-cards facedown dimond"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+			</div>
+			<div class="column">
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+			</div>
+			<div class="column">
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+			</div>
+			<div class="column">
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+				<button class="contentofcards column-cards facedown"></button>
+			</div>
+		</div>
+	</body>
 </html>
